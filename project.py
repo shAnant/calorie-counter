@@ -8,7 +8,6 @@ from bs4 import BeautifulSoup
 
 model = tf.keras.applications.MobileNetV2(weights='imagenet')
 
-calorie_data = pd.read_csv('calorie_data.csv')  
 
 def preprocess_image(image_path):
     image = cv2.imread(image_path)
